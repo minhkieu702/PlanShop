@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><form action="searchServlet" method="post" class="formsearch">
+                    <input type="text" name="txtsearch">
+                    <select name="searchby">
+                        <option>by name</option>
+                        <option>by category</option>
+                    </select>
+                    <input type="submit" value="search" name="action">
+                    </form>       
+                </li>           
+            </ul>     
+        </nav>
+        <section>
+        <form action="registerServlet" method="post" class="formsearch">
+            <h1>Register page!</h1>
+            <table>
+                <tr><td>email</td><td><input type="text" name="txtemail" required=""></td></tr>
+                <tr><td>full name</td><td><input type="text" name="txtfullname" required=""></td></tr>
+                <tr><td>password</td><td><input type="password" name="txtpassword" required=""></td></tr>
+                <tr><td>phone</td><td><input type="text" name="txtphone" required=""></td></tr>
+                <tr><td colspan="2"><input type="submit" value="create"></td></tr>              
+            </table>   
+        </form>
+ </section>  
+    </body>
+</html>
